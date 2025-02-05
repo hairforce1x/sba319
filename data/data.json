@@ -9,6 +9,9 @@
       { "id": 2, "name": "Valley Hi", "par": 72 }
     ],
     "scores": [
-      { "playerId": 1, "score": 69 }
+      { "playerId": 1, "score": 69 },
+      { "playerId": 2, "score": 69 }.
+      { "playerId": 1, "score": 70 }
+
     ]
   }
