@@ -1,0 +1,14 @@
+{
+    "golfers": [
+      { "id": 1, "name": "Tiger" },
+      { "id": 2, "name": "Freddie" },
+      { "id": 3, "name": "Sergio" }
+    ],
+    "courses": [
+      { "id": 1, "name": "Patty Jewett", "par": 72 },
+      { "id": 2, "name": "Valley Hi", "par": 72 }
+    ],
+    "scores": [
+      { "playerId": 1, "score": 69 }
+    ]
+  }
