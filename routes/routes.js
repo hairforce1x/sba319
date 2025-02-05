@@ -91,7 +91,7 @@ router.get('/scores', async (req, res) => {
     } catch (err) {
         res.status(500).json({ error: err.message })
     }
-})
+});
 
 router.post('/scores', async (req, res) => {
     try {
@@ -102,6 +102,6 @@ router.post('/scores', async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
-})
+});
 
 module.exports = router;
