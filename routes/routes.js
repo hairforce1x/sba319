@@ -72,6 +72,17 @@ router.get('/courses', async (req, res) => {
     }
 })
 
+router.post('/courses', async (req, res) => {
+    try {
+        const { name, par } = req.body;
+        const newCourse = new Course({ name, par });
+        await newCourse.save();
+        res.status(201).json(newCourse);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 // SCORE ROUTES
 
 router.get('/scores', async (req, res) => {
@@ -79,6 +90,17 @@ router.get('/scores', async (req, res) => {
         res.json(data.scores)
     } catch (err) {
         res.status(500).json({ error: err.message })
+    }
+})
+
+router.post('/scores', async (req, res) => {
+    try {
+        const { playerId, score } = req.body;
+        const newScore = new Score({ playerId, score });
+        await newScore.save();
+        res.status(201).json(newScore);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
     }
 })
 
