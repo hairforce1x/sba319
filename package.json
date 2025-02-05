@@ -14,5 +14,13 @@
     "mongodb": "^6.13.0",
     "mongoose": "^8.9.6",
     "nodemon": "^3.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hairforce1x/sba319.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hairforce1x/sba319/issues"
+  },
+  "homepage": "https://github.com/hairforce1x/sba319#readme"
 }
