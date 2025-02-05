@@ -8,6 +8,8 @@ const data = require('../data/data.json');
 
 router.use(express.json());
 
+// GOLFER ROUTES
+
 router.get('/golfers', async (req, res) => {
     try {
         res.json(data.golfers)
@@ -60,6 +62,8 @@ router.delete('/golfers/:id', async (req, res) => {
     }
 });
 
+// COURSE ROUTES
+
 router.get('/courses', async (req, res) => {
     try {
         res.json(data.courses)
@@ -67,6 +71,8 @@ router.get('/courses', async (req, res) => {
         res.status(500).json({ error: err.message })
     }
 })
+
+// SCORE ROUTES
 
 router.get('/scores', async (req, res) => {
     try {
